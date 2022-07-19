@@ -1,4 +1,4 @@
-import { Button, Stack, Tooltip } from '@mui/material'
+import { Button, Stack, Tooltip, Typography } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -20,6 +20,10 @@ export const ExerciseCard = ({exercise}) => {
                 </Button>
             </Tooltip>
         </Stack>
+
+        <Typography fontSize="24px" textTransform="captitalize" ml="22px" color="#000" fontWeight="bold" mt="11px" pb="10px">
+            {exercise.name}
+        </Typography>
     </Link>
   )
 }
