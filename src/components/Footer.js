@@ -1,5 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Logo from "../assets/images/Logo-1.png";
 
 export const Footer = () => {
@@ -12,6 +13,9 @@ export const Footer = () => {
         <Typography variant="h5">Data from <a href="https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/" style={{textDecoration: "none", color: "#ff2625"}}>ExerciseDb</a></Typography>
 
         <Typography variant="h5">Videos by <a href="https://rapidapi.com/h0p3rwe/api/youtube-search-and-download/" style={{textDecoration: "none", color: "#ff2625"}}>Youtube Search and Download</a></Typography>
+        <Link to="/images/attributions" style={{textDecoration: "none", color: "#ff2625"}}>
+          <Typography variant="h5">Image Attributions</Typography>
+        </Link>
       </Stack>
     </Box>
   )

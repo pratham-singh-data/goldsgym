@@ -5,6 +5,7 @@ import { ExerciseDetails } from "./pages/ExerciseDetails";
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { AttributionPage } from "./pages/AttributionPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/exercise/:exerciseId" element={<ExerciseDetails/>}/>
+        <Route path="/images/attributions" element={<AttributionPage/>}/>
       </Routes>
 
       <Footer/>
