@@ -1,11 +1,12 @@
 import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
+import { Loader } from './Loader'
 
 export const ExerciseVideos = ({name, exerciseVideos}) => {       
     if(!exerciseVideos.contents){
         return(
             <div>
-                Loading
+                <Loader/>
             </div>
         )
     }

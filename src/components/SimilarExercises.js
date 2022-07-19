@@ -4,6 +4,14 @@ import { HorizontalScrollBar } from './HorizontalScrollBar'
 import { Loader } from './Loader'
 
 export const SimilarExercises = ({targetMuscleExercises, equipmentExercises}) => {
+    if(targetMuscleExercises.length > 10){
+        targetMuscleExercises = targetMuscleExercises.slice(0, 9);
+    }
+
+    if(equipmentExercises.length > 10){
+        equipmentExercises = equipmentExercises.slice(0, 9);
+    }
+
   return (
     <Box sx={{mt: {lg: "100px", xs: "0"}}}>
         <Typography variant="h5">Exercises that target the same muscle group</Typography>

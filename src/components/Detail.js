@@ -11,15 +11,18 @@ export const Detail = ({exerciseDetail}) => {
     const extraDetail = [
         {
             icon: BodyPartImage,
-            name: bodyPart
+            name: bodyPart,
+            key: 1
         },
         {
             icon: TargetImage,
-            name: target
+            name: target,
+            key: 2
         },
         {
             icon: EquipmentImage,
-            name: equipment
+            name: equipment,
+            key: 3
         }
     ]
 
@@ -38,7 +41,7 @@ export const Detail = ({exerciseDetail}) => {
 
             {extraDetail.map((item) => {
                 return(
-                    <Stack key={item.name} direction="row" gap="24px" alignItems="center">
+                    <Stack key={item.key} direction="row" gap="24px" alignItems="center">
                         <Button sx={{backgroundColor: "#fff2db", borderRadius: "50%", width: "100px", heigh: "100px"}}>
                             <img src={item.icon} alt={item.name}/>
                         </Button>
