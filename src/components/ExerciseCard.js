@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const ExerciseCard = ({exercise}) => {
   return (
-    <Link to={`/exercise/${exercise.id}`} className="exercise-card">
+    <Link to={`/exercise/${exercise.id}`} className="exercise-card" onClick={() => {window.scrollTo(0,0)}}>
         <img src={exercise.gifUrl} alt={exercise.name} loading="lazy"/>
 
         <Stack direction="row">

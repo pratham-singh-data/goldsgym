@@ -39,7 +39,7 @@ export const HorizontalScrollBar = ({data, bodyPart, setBodyPart, isBodyPart}) =
             }
             else{
               return(
-                <ExerciseCard key={item.id} exercise={item}/>
+                <ExerciseCard key={item.id} exercise={item} />
               )
             }
         })}
