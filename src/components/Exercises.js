@@ -2,8 +2,9 @@ import { Box, Pagination, Stack, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 import { ExerciseCard } from './ExerciseCard'
+import { Loader } from './Loader';
 
-export const Exercises = ({exercises, setExercises, bodyPart}) => {
+export const Exercises = ({exercises, setExercises, bodyPart, isLoading}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 10;
 
@@ -48,8 +49,14 @@ export const Exercises = ({exercises, setExercises, bodyPart}) => {
       </Stack>
 
       <Stack mt="100px" alignItems="center">
-        {exercises.length > 9 && 
+        {isLoading && <Loader/>}
+
+        {!isLoading && exercises.length > 9 && 
           <Pagination color="standard" shape="rounded" defaultPage={1} count={Math.ceil(exercises.length / exercisesPerPage)} page={currentPage} onChange={paginate} size="large"/>
+        }
+
+        {!isLoading && exercises.length === 0 && 
+          <Typography variant="h3">No results to display</Typography>
         }
       </Stack>
     </Box>

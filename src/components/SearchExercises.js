@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 import { HorizontalScrollBar } from './HorizontalScrollBar';
 
-export const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
+export const SearchExercises = ({setExercises, bodyPart, setBodyPart, setIsLoading}) => {
     const [search, setSearch] = useState("");
     const [bodyParts, setBodyParts] = useState([]);
 
@@ -18,6 +18,8 @@ export const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
     }, [])
 
     const handleSearch = async () => {
+        setIsLoading(true);
+
         if(search){
             const exercises = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
 
@@ -25,6 +27,8 @@ export const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
 
             setExercises(searchedExercises);
         }
+
+        setIsLoading(false);
     }
 
     const onInputKeyDown = (ev) => {
