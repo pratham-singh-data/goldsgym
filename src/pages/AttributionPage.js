@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material'
+import { Stack } from '@mui/material'
 import React from 'react'
 import { AttributionImageCard } from '../components/AttributionImageCard'
 import { imageGetter } from '../utils/fetchImages'
