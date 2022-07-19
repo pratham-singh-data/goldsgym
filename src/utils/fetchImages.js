@@ -14,52 +14,62 @@ export const imageGetter = [
     {
         name: "Pixel Perfect",
         linkToCreator: "https://www.flaticon.com/authors/pixel-perfect",
-        image: BackImage
+        image: BackImage,
+        key: 1
     },
     {
         name: "Freepik",
         linkToCreator: "https://www.freepik.com/",
-        image: HeartImage
+        image: HeartImage,
+        key: 2
     },
     {
         name: "Rabit Jes",
         linkToCreator: "https://www.flaticon.com/authors/rabit-jes",
-        image: ChestImage
+        image: ChestImage,
+        key: 3
     },
     {
         name: "Good Ware",
         linkToCreator: "https://www.flaticon.com/authors/good-ware",
-        image: NeckImage
+        image: NeckImage,
+        key: 4
     },
     {
         name: "Iconixar",
         linkToCreator: "https://www.flaticon.com/authors/iconixar",
-        image: ShoulderImage
+        image: ShoulderImage,
+        key: 5
     },
     {
         name: "Abdul-Aziz",
         linkToCreator: "https://www.flaticon.com/authors/abdul-aziz",
-        image: WaistImage
+        image: WaistImage,
+        key: 6
     },
     {
         name: "Mayor Icons",
         linkToCreator: "https://www.flaticon.com/authors/mayor-icons",
-        image: UpperArmImage
+        image: UpperArmImage,
+        key: 7
     },
     {
         name: "Freepik",
         linkToCreator: "https://www.freepik.com/",
-        image: UpperLegImage
+        image: UpperLegImage,
+        key: 8
     },
     {
         name: "Freepik",
         linkToCreator: "https://www.freepik.com/",
-        image: LowerArmImage
+        image: LowerArmImage,
+        key: 9
     },
     {
         name: "Vitaly Gorbachev",
         linkToCreator: "https://www.flaticon.com/authors/vitaly-gorbachev",
-        image: LowerLegImage
+        image: LowerLegImage,
+        key: 10
     }
 ]
 
