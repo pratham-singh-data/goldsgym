@@ -13,7 +13,9 @@ export const Home = () => {
     <Box>
       <HeroBanner/>
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} setIsLoading={setIsLoading}/>
-      <Exercises setExercises={setExercises} bodyPart={bodyPart} exercises={exercises} isLoading={isLoading}/>
+      <div id="exercises">
+        <Exercises setExercises={setExercises} bodyPart={bodyPart} exercises={exercises} isLoading={isLoading}/>
+      </div>
     </Box>
   )
 }
