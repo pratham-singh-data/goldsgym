@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/goldsgym/static/css/main.20acbc28.css",
+    "main.js": "/goldsgym/static/js/main.3219e0eb.js",
+    "static/media/banner.png": "/goldsgym/static/media/banner.5209b5e92a864ca0c615.png",
+    "static/media/heart.png": "/goldsgym/static/media/heart.8f6c3eb73fe960a96f17.png",
+    "static/media/thigh.png": "/goldsgym/static/media/thigh.195a765f7e226284a111.png",
+    "static/media/biceps.png": "/goldsgym/static/media/biceps.c5c2e2524ffd2dd237b9.png",
+    "static/media/chest.png": "/goldsgym/static/media/chest.600c68a0fe18a06272da.png",
+    "static/media/neck.png": "/goldsgym/static/media/neck.56c74ea9be4bdac62188.png",
+    "static/media/waist.png": "/goldsgym/static/media/waist.1f66ef07cb2fc5e61ca3.png",
+    "static/media/leg.png": "/goldsgym/static/media/leg.010dfc15220b5b7a3bdf.png",
+    "static/media/back.png": "/goldsgym/static/media/back.916d3d07755e0038c96e.png",
+    "static/media/arm.png": "/goldsgym/static/media/arm.4bce8684a347bd97cee0.png",
+    "static/media/shoulders.png": "/goldsgym/static/media/shoulders.dc387ed4fd8fcd5abef3.png",
+    "static/media/gym.png": "/goldsgym/static/media/gym.6e701417c428e2fbc267.png",
+    "index.html": "/goldsgym/index.html",
+    "main.20acbc28.css.map": "/goldsgym/static/css/main.20acbc28.css.map",
+    "main.3219e0eb.js.map": "/goldsgym/static/js/main.3219e0eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20acbc28.css",
+    "static/js/main.3219e0eb.js"
+  ]
+}
